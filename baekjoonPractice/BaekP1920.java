@@ -1,4 +1,7 @@
-package LevelPractice;
+// 백준 1920 - 수 찾기
+// 주어진 N개의 수 집합 A에 대해, M개의 수가 A에 포함되어 있는지 여부를 출력
+// 입력: 정수 N개의 집합 A, 정수 M개의 조회 대상 숫자
+// 출력: 각 조회 대상이 A에 있으면 1, 없으면 0 (각 줄에 출력)
 
 import java.io.BufferedReader;
 import java.io.IOException;

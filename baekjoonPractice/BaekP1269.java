@@ -1,4 +1,9 @@
 package LevelPractice;
+// 백준 1269 - 대칭 차집합
+// 두 집합 A, B에서 A에는 있고 B에는 없는 원소, 또는 B에는 있고 A에는 없는 원소의 집합
+// 즉, A-B ∪ B-A 에 해당하는 원소들의 개수를 구함
+// 입력: 집합 A, 집합 B의 원소 목록
+// 출력: 대칭 차집합의 원소 개수
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
