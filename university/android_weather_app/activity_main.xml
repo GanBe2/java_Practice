@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- 상단 날씨 정보 -->
+    <LinearLayout
+        android:id="@+id/weather_info"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_alignParentTop="true"
+        android:background="#B3E5FC"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:id="@+id/tv_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="날씨"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_weather_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sunny, 25°C"
+            android:textColor="#000"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- 준비물 추천 -->
+    <LinearLayout
+        android:id="@+id/preparation_recommendations"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical"
+        android:layout_below="@id/weather_info"
+        android:padding="16dp"
+        android:background="#FFEB3B">
+
+        <TextView
+            android:id="@+id/tv_preparations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="준비물 추천"
+            android:textSize="18sp"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/tv_preparations_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="우산, 마스크"
+            android:textSize="14sp"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <!-- 메모 -->
+    <LinearLayout
+        android:id="@+id/memo_section"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical"
+        android:layout_below="@id/preparation_recommendations"
+        android:padding="16dp"
+        android:background="#FFCDD2">
+
+        <TextView
+            android:id="@+id/tv_memo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="메모"
+            android:textSize="18sp"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/tv_memo_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10시 미팅"
+            android:textSize="14sp"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <!-- BottomNavigationView 추가 -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:labelVisibilityMode="labeled"
+        app:itemBackground="@color/white"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>
