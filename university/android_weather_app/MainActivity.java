@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements WeatherCallback{
                         + "시간 : " + time + "\n"
                         + "날씨 : " + weather + "\n";
                 textWeatherInfo.setText(weatherInfo);
-                Log.d(TAG, "로그남겼다 봐라- Date: " + date + ", Time: " + time + ", Weather: " + weather);
+                Log.d(TAG, "Log- Date: " + date + ", Time: " + time + ", Weather: " + weather);
             }
 
 
