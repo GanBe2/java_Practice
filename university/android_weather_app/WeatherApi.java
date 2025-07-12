@@ -32,7 +32,7 @@ public class WeatherApi {
 
                     URL url = new URL(
                             "https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtFcst"
-                                    + "?ServiceKey=kOi8Lip34pcIqvkXt4tjC%2Fdz3weHgvBIyCgn1CO3NCHIViflC5x3%2B4QsijSS%2BCQ2tBBlew5nChk1k90j7MBvuw%3D%3D" // 서비스키
+                                    + "?ServiceKey=" // 서비스키
                                     + "&numOfRows=60" // 한 페이지 결과 수 (10개 카테고리값 * 6시간)
                                     + "&base_date=" + t.format(DateTimeFormatter.ofPattern("yyyyMMdd"))  // 발표 날짜
                                     + "&base_time=" + t.format(DateTimeFormatter.ofPattern("HHmm")) // 발표 시각
