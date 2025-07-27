@@ -116,7 +116,7 @@ public class HomeFragment extends Fragment {
             // 기상청 API 호출 URL
             URL url = new URL(
                     "https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtFcst"
-                            + "?ServiceKey=kOi8Lip34pcIqvkXt4tjC%2Fdz3weHgvBIyCgn1CO3NCHIViflC5x3%2B4QsijSS%2BCQ2tBBlew5nChk1k90j7MBvuw%3D%3D"
+                            + "?ServiceKey="
                             + "&numOfRows=60"
                             + "&base_date=" + baseDate
                             + "&base_time=" + baseTime
