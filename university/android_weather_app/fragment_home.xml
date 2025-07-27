@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeFragment">
+
+    <!-- 날씨 -->
+    <LinearLayout
+        android:id="@+id/weather_info"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_alignParentTop="true"
+        android:background="#B3E5FC"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="날씨"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="날짜"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/timeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시간"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/weatherTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="날씨"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/temperatureTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="기온"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/preparation_recommendations"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical"
+        android:layout_below="@id/weather_info"
+        android:padding="16dp"
+        android:background="#FFEB3B">
+
+        <TextView
+            android:id="@+id/tv_preparations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="뭐 입을까?"
+            android:textSize="18sp"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/tv_preparations_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="옷을 고르고 있어요."
+            android:textSize="14sp"
+            android:textColor="#000" />
+    </LinearLayout>
+
+    <!-- 메모 -->
+    <LinearLayout
+        android:id="@+id/memo_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/preparation_recommendations"
+        android:padding="16dp"
+        android:background="#FFCDD2">
+
+        <TextView
+            android:id="@+id/tv_memo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="메모"
+            android:textSize="18sp"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/tv_memo_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="저장된 메모가 여기에 표시됩니다."
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:padding="8dp"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/et_memo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="메모를 입력하세요"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:background="#FFFFFF"
+            android:padding="8dp"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btn_save_memo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="저장"
+            android:textColor="#FFF"
+            android:background="#8BC34A"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/btn_clear_memo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="모두 지우기"
+            android:textColor="#FFF"
+            android:background="#F44336"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+</LinearLayout>
