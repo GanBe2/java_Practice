@@ -3,28 +3,50 @@ public class Cloth {
 
     // 기온별 옷차림 정보를 배열로 저장
     private static final String[] outerwears = {
-            "-", "-", "얇은 가디건", "가디건", "자켓, 야상", "트렌치코트, 야상", "코트, 가죽자켓, 플리스", "패딩, 두꺼운 코트"
+        "-", 
+	"-", 
+	"薄手のカーディガン", 
+	"カーディガン",
+	"ジャケット, モッズコート",
+	"トレンチコート, モッズコート",
+	"コート, レザージャケット, フリース",
+	"ダウンジャケット, 厚手のコート"
     };
 
     private static final String[] tops = {
-            "민소매, 반팔", "반팔, 얇은 셔츠", "긴팔티", "얇은 니트, 맨투맨", "니트", "니트", "히트텍, 니트", "-"
+        "ノースリーブ, 半袖",
+	"半袖, 薄手のシャツ",
+	"長袖Tシャツ",
+	"薄手のニット, スウェット",
+	"ニット",
+	"ニット",
+	"ヒートテック, ニット",
+	"-"
     };
 
-    private static final String[] bottoms = {
-            "반바지, 짧은 치마, 원피스", "반바지, 면바지", "면바지", "청바지", "청바지", "청바지, 기모바지", "레깅스", "기모제품"
-    };
+private static final String[] bottoms = {
+    "短パン、短いスカート、ワンピース", 
+    "短パン、綿パンツ", 
+    "綿パンツ", 
+    "ジーンズ", 
+    "ジーンズ", 
+    "ジーンズ、裏起毛パンツ", 
+    "レギンス", 
+    "裏起毛アイテム"
+};
 
-    private static final String[] accessories = {
-            "-", "-", "-", "-", "스타킹", "스타킹", "-", "목도리"
-    };
+private static final String[] accessories = {
+    "-", "-", "-", "-", "ストッキング", "ストッキング", "-", "マフラー"
+};
+
 
     // 기온에 따른 추천 옷차림을 반환
     public static String getClothingRecommendation(int temperature) {
         int index = getTemperatureIndex(temperature);
-        return "외투: " + outerwears[index] + "\n" +
-                "상의: " + tops[index] + "\n" +
-                "하의: " + bottoms[index] + "\n" +
-                "기타: " + accessories[index];
+        return "上着: " + outerwears[index] + "\n" +
+                "トップス: " + tops[index] + "\n" +
+                "ボトムス: " + bottoms[index] + "\n" +
+                "アクセサリー: " + accessories[index];
     }
 
     // 입력된 기온에 맞는 배열 인덱스를 반환

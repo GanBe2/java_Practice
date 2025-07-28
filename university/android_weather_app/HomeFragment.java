@@ -85,10 +85,10 @@ public class HomeFragment extends Fragment {
                     TextView temperatureTextView = requireView().findViewById(R.id.temperatureTextView);
                     TextView clothTextView = requireView().findViewById(R.id.tv_preparations_detail);
 
-                    dateTextView.setText("날짜 : " + weatherInfo[0]);
-                    timeTextView.setText("시간 : " + weatherInfo[1] + " 기준");
-                    weatherTextView.setText("날씨 : " + weatherInfo[2]);
-                    temperatureTextView.setText("기온 : " + weatherInfo[3] + "℃");
+                    dateTextView.setText("基準日 : " + weatherInfo[0]);
+                    timeTextView.setText("基準時間 : " + weatherInfo[1] + " 기준");
+                    weatherTextView.setText("天気 : " + weatherInfo[2]);
+                    temperatureTextView.setText("気温 : " + weatherInfo[3] + "℃");
                     temperature = Integer.parseInt(weatherInfo[3]) ;
                     clothTextView.setText(getCloth(temperature)); //뭐입지 텍스트
 
@@ -176,15 +176,15 @@ public class HomeFragment extends Fragment {
                 weatherInfo[1] = forecastTime;
 
                 if ("0".equals(precipitationType)) {
-                    if ("1".equals(skyCondition)) weatherInfo[2] = "맑음";
-                    else if ("3".equals(skyCondition)) weatherInfo[2] = "구름많음";
-                    else if ("4".equals(skyCondition)) weatherInfo[2] = "흐림";
-                } else if ("1".equals(precipitationType)) weatherInfo[2] = "비";
-                else if ("2".equals(precipitationType)) weatherInfo[2] = "비/눈";
-                else if ("3".equals(precipitationType)) weatherInfo[2] = "눈";
-                else if ("5".equals(precipitationType)) weatherInfo[2] = "빗방울";
-                else if ("6".equals(precipitationType)) weatherInfo[2] = "빗방울눈날림";
-                else if ("7".equals(precipitationType)) weatherInfo[2] = "눈날림";
+                    if ("1".equals(skyCondition)) weatherInfo[2] = "晴れ";
+                    else if ("3".equals(skyCondition)) weatherInfo[2] = "曇りがち";
+                    else if ("4".equals(skyCondition)) weatherInfo[2] = "曇り";
+                } else if ("1".equals(precipitationType)) weatherInfo[2] = "雨";
+                else if ("2".equals(precipitationType)) weatherInfo[2] = "みぞれ";
+                else if ("3".equals(precipitationType)) weatherInfo[2] = "雪";
+                else if ("5".equals(precipitationType)) weatherInfo[2] = "にわか雨";
+                else if ("6".equals(precipitationType)) weatherInfo[2] = "みぞれと小雪";
+                else if ("7".equals(precipitationType)) weatherInfo[2] = "小雪";
             }
 
         } catch (Exception e) {

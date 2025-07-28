@@ -21,7 +21,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="날씨"
+            android:text="今の天気"
             android:textColor="#000"
             android:textSize="18sp" />
 
@@ -29,7 +29,7 @@
             android:id="@+id/dateTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="날짜"
+            android:text="基準日"
             android:textColor="#000"
             android:textSize="14sp" />
 
@@ -37,7 +37,7 @@
             android:id="@+id/timeTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="시간"
+            android:text="基準時間"
             android:textColor="#000"
             android:textSize="14sp" />
 
@@ -45,7 +45,7 @@
             android:id="@+id/weatherTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="날씨"
+            android:text="天気"
             android:textColor="#000"
             android:textSize="14sp" />
 
@@ -53,7 +53,7 @@
             android:id="@+id/temperatureTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="기온"
+            android:text="気温"
             android:textColor="#000"
             android:textSize="14sp" />
 
@@ -72,7 +72,7 @@
             android:id="@+id/tv_preparations"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="뭐 입을까?"
+            android:text="服装提案"
             android:textSize="18sp"
             android:textColor="#000" />
 
@@ -80,7 +80,7 @@
             android:id="@+id/tv_preparations_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="옷을 고르고 있어요."
+            android:text="服装を選んでいます。"
             android:textSize="14sp"
             android:textColor="#000" />
     </LinearLayout>
@@ -99,7 +99,7 @@
             android:id="@+id/tv_memo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="메모"
+            android:text="メモ"
             android:textSize="18sp"
             android:textColor="#000" />
 
@@ -107,7 +107,7 @@
             android:id="@+id/tv_memo_display"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="저장된 메모가 여기에 표시됩니다."
+            android:text="メモはここに表示されます"
             android:textSize="16sp"
             android:textColor="#000"
             android:padding="8dp"
@@ -118,7 +118,7 @@
             android:id="@+id/et_memo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="메모를 입력하세요"
+            android:hint="内容を入力してください"
             android:textColor="#000"
             android:textSize="14sp"
             android:background="#FFFFFF"
@@ -129,7 +129,7 @@
             android:id="@+id/btn_save_memo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="저장"
+            android:text="保存"
             android:textColor="#FFF"
             android:background="#8BC34A"
             android:layout_marginTop="8dp"/>
@@ -138,7 +138,7 @@
             android:id="@+id/btn_clear_memo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="모두 지우기"
+            android:text="すべて削除"
             android:textColor="#FFF"
             android:background="#F44336"
             android:layout_marginTop="8dp"/>
