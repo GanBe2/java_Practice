@@ -29,15 +29,9 @@
 ## 📁 主なクラス・ファイル
 
 - `MainActivity`：UI初期化、画面処理  
-- `WeatherApi`：APIリクエスト・XMLパース（非同期処理）  
+- `HomeFragment`：APIリクエスト・XMLパース  
 - `Cloth`：気温に基づく服装提案ロジック  
 - `MemoDbHelper`：メモの保存／取得処理（SQLite）
-
-## 🚀 実行方法
-
-1. Android Studioで本プロジェクトを開く  
-2. `WeatherApi.java` 内の `serviceKey` を自分のAPIキーに設定  
-3. エミュレータまたは実機でビルド・実行
 
 ## 💡 補足
 
